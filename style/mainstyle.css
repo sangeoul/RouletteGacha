@@ -1,0 +1,622 @@
+@font-face{
+font-family:'ubuntu';
+src:url("./fonts/ubuntu/ubuntu-R.ttf"); format("truetype");
+font-style:normal;
+font-weight:normal;
+}
+@font-face{
+font-family:'shentox';
+src:url("./fonts/Shentox/Shentox.ttf"); format("truetype");
+font-style:normal;
+font-weight:normal;
+}
+@font-face{
+font-family:'shentox';
+src:url("./fonts/Shentox/Shentox Bold.ttf"); format("truetype");
+font-style:normal;
+font-weight:bold;
+}
+
+
+body {
+	text-align:center;
+	background-image: url("../images/nemesis.jpg");
+	height:100%;
+}
+div.login{
+	text-align:center;
+	vertical-align:middle;
+	margin-top:150px;
+	font-family: 'ubuntu';
+	font-size:50px;
+	color: #90EE90;
+	}
+
+a {
+	color: rgba(250,250,250,1);
+	text-decoration: none; 
+	font-family:'shentox';
+}
+a:visited {
+	color:rgba(250,250,250,1);
+}
+a:hover {
+	color: #FF9500;
+	font-weight:bold;
+}
+
+
+a.cancelroulette{
+
+	color:#FF1010;
+
+}
+a.cancelroulette:hover{
+
+	color:#FF6060;
+
+}
+
+table {
+	border-collapse:collapse;
+}
+
+
+table.listtable {
+	border : 0px solid black;
+}
+
+
+td {
+
+	padding-left:10px;
+	color: rgba(250,250,250,1);
+	font-family:'shentox';
+	vertical-align:middle;
+}
+
+th {
+
+	color: rgba(250,250,250,1);
+	font-family:'shentox';
+
+}
+
+td.topmenu_mainpage {
+	//border: 1px solid black;
+	text-align:center;
+	font-size:28px;
+	padding-left:10px;
+	background-color: rgba(0,0,0,0);
+	width:200px;
+}
+
+td.topmenu_roulette {
+	text-align:left;
+	font-size:20px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+td.topmenu_ranking {
+	text-align:left;
+	font-size:20px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+td.topmenu_shop {
+	text-align:left;
+	font-size:20px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+td.topmenu_collection {
+	text-align:left;
+	font-size:20px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+
+td.topmenu_mypage {
+	text-align:left;
+	font-size:20px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+td.topmenu_balance {
+	text-align:left;
+	font-size:18px;
+	padding-left:20px;
+	background-color: rgba(0,0,0,0);
+}
+
+
+span.topmenu_waitingwithdraw {
+
+	color: #ff8040;
+	padding-left:30px;
+	background-color: rgba(0,0,0,0);
+}
+
+
+td.makenew {
+	border:2px solid #00C060;
+	font-size: 25px;
+	font-family: "shentox";
+	text-align: center;
+	text-decoration: none;
+}
+
+th.maintitle {
+	font-size: 28px;
+	width : 480px;
+	text-align: center;
+	font-weight: normal;
+
+}
+th.ranktype{
+	border: 1px solid white;
+	font-size: 21px;
+	width : 220px;
+	text-align: center;
+	font-weight: normal;
+
+}
+td.maintitle {
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+	background-color: rgba(0,0,0,0);
+
+}
+
+td.balancesum {
+	text-align:center;
+	width : 200px;
+}
+
+a.listindex{
+
+	font-size: 15px;
+	margin-left: 20px;
+	color:white;
+
+}
+a.listindex_selected{
+	font-size: 17px;
+	margin-left: 20px;
+	font-weight: bold;
+	color: lightgray;
+
+}
+
+td.rich_ranking_number{
+	padding-left:0px;
+	text-align:center;
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:20;
+}
+
+td.rich_ranking_portrait{
+padding-left:0px;
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:35px;
+	text-align:center;
+	vertical-align:middle;
+}
+td.rich_ranking_name{
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:320px;
+	font-size:18px;
+
+}
+
+
+td.rich_ranking_balance{
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width: 260px;
+	font-size:18px;
+
+}
+td.winner_ranking_number{
+	padding-left:0px;
+	text-align:center;
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:20;
+}
+
+td.winner_ranking_portrait{
+padding-left:0px;
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:35px;
+	text-align:center;
+	vertical-align:middle;
+
+}
+
+td.winner_ranking_name{
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width:320px;
+	font-size:18px;
+
+}
+
+td.winner_ranking_balance{
+	background:rgba(0,0,0,0.4);
+	border: 1px solid green;
+	width: 260px;
+	font-size:18px;
+
+}
+
+
+img{
+vertical-align:middle;
+
+}
+img.ranking_portrait{
+	height:35px;
+	
+}
+img.flag{
+height:25px;
+
+}
+
+
+td#rank1{
+	height:50;
+
+	font-size:26px;
+
+}
+img#rank1{
+	height:50;
+}
+
+td#rank2{
+	height:45;
+	font-size:23px;
+
+}
+img#rank2{
+	height:45;
+}
+
+td#rank3{
+	height:40;
+	font-size:20px;
+
+}
+img#rank3{
+	height:40;
+}
+
+
+tr.roulettelist {
+	border : 1px solid black;
+	height : 40px;
+}
+td.roulettelist_name {
+	border : 1px solid black;
+	width : 230px;
+	font-family: "shentox"; 
+	font-size : 18px;
+	background-color:rgba(0,0,0,0.3);
+}
+td.roulettelist_name:hover {
+	background:  rgba(220,100,0,0.4);
+	font-size : 18px;
+	font-weight : bold;
+}
+td.roulettelist_members {
+	border : 1px solid black;
+	width : 70px;
+	font-size : 14px;
+	padding-left:0;
+	text-align: center;
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.roulettelist_price {
+	border : 1px solid black;
+	width : 200px;
+	font-size : 14px;
+	background-color:rgba(0,0,0,0.3);
+}
+td.roulettelist_time {
+	border : 1px solid black;
+	width : 100px;
+	font-size : 14px;
+	background-color:rgba(0,0,0,0.3);
+}
+
+td.roulettelist_winner {
+	border : 1px solid black;
+	width : 280px;
+	font-family:"Comic Sans MS";
+	background: rgba(220,120,120,0.4);
+	text-align : center;
+	font-size : 18px;
+}
+
+
+a.roulettelist_winner {
+	font-family:"Comic Sans MS";
+	text-align : center;
+	font-size : 18px;
+}
+
+td.roulettelist_winner_me {
+	border : 1px solid black;
+	width : 280px;
+	background: rgba(0,230,180,0.4);
+	font-family:"Comic Sans MS";
+	font-weight:bold;
+	text-align : center;
+	font-size : 19px;
+}
+a.roulettelist_winner_me {
+	font-family:"Comic Sans MS";
+	text-align : center;
+	font-size : 19px;
+}
+
+
+td.transaction_list_amount {
+	border-bottom : 1px solid black;
+	width : 200px;
+	text-align : center;
+	font-size : 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+td.transaction_list_type {
+	border-bottom : 1px solid black;
+	width : 60px;
+	padding-left:0px;
+	text-align : center;
+	font-size : 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+td.transaction_list_balance {
+	border-bottom : 1px solid black;
+	width : 120px;
+	padding-left:0px;
+	text-align : center;
+	font-size : 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+td.transaction_list_date {
+	border-bottom : 1px solid black;
+	width : 200px;
+	padding-left:0px;
+	text-align : center;
+	font-size : 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+td.rouletteinfo{
+	border: 1px solid black;
+	text-align:center;
+	background-color:rgba(0,0,0,0.3);
+
+}
+
+
+td.roulette_title{
+	border: 1px solid black;
+	text-align:center;
+	background-color:rgba(0,0,0,0.3);
+
+}
+
+td.collections_list{
+	padding-left:0px;
+
+}
+td.collection_image{
+
+	text-align:center;
+	vertical-align:middle;
+	padding-left:0px;
+	width:140px;
+	
+
+}
+
+td.collection_name{
+	text-align:center;
+	vertical-align:middle;
+	padding-left:0px;
+	font-size:14px;
+	height:60px;
+	}
+td.collection_price{
+	text-align:center;
+	vertical-align:middle;
+	padding-left:0px;
+	font-size:14px;
+	height:15px;
+	}
+
+td.collection_amount{
+	text-align:center;
+	vertical-align:middle;
+	padding-left:0px;
+	height:20px;
+	}
+
+
+
+
+span{
+	color: rgba(250,250,250,1);
+}
+
+span.roulette_title_prize{
+	font-size:30px;
+	margin-right:50px;
+	font-family:impact;
+
+}
+
+span.roulette_title_ticket{
+	
+	font-size:15px;
+}
+img.attendance_button{
+	margin-left:20px;
+	background: url('../images/attendance.jpg');
+	vertical-align: middle;
+	width:50px;
+	height:50px;
+
+}
+img.attendance_button:hover {
+	
+	background: url('../images/attendance_hover.jpg');
+
+
+}
+
+td.roulette_portrait {
+	border: 1px solid black;
+	padding-left:0px;
+	text-align:center;
+	background-color:rgba(0,0,0,0.3);
+}
+td.roulette_name {
+	border: 1px solid black;
+	padding-left:0px;
+	text-align:center;
+	font-size:22px;
+	width:220px;
+	background-color:rgba(0,0,0,0.3);
+}
+
+
+
+td.roulettemake_title{
+	font-size:25px;
+
+	font-family:'verdana';
+	background-color:rgba(0,0,0,0.3);
+}
+
+td.roulettemake_content{
+	font-family:'verdana';
+	background-color:rgba(0,0,0,0.3);
+}
+
+td.mypageport {
+	border : 1px solid black;
+	padding-left: 0px;
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.tophelp {
+	width: 80px;
+	padding-left:0px;
+	font-size: 14px;
+	text-align:center;
+	
+
+}
+td.mypagename {
+	border : 1px solid black;
+	padding-left: 20px;
+	width: 400px;
+	height: 60px;
+	font-size: 30px;
+	font-family: "Comic Sans MS";
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.mypagebalance {
+	border : 1px solid black;
+	padding-left: 20px;
+	width: 400px;
+	height: 30px;
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.mypage3 {
+	border : 1px solid black;
+	padding-left: 20px;
+	width: 400px;
+	height: 30px;
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.mypage4 {
+	border : 1px solid black;
+	padding-left: 20px;
+	width: 400px;
+	height: 30px;
+	background-color:rgba(0,0,0,0.3);
+
+}
+td.mypage5 {
+	border : 1px solid black;
+	font-size: 18px;
+	padding-left: 20px;
+	width: 400px;
+	height: 30px;
+	background-color:rgba(0,0,0,0.3);
+}
+
+td.logout {
+	border : 0px;
+	width: 90px;
+	height: 25px;
+	padding-left:0px;
+	color:white;
+	font-size: 15px;
+	text-align:center;
+	background-color: #ff8c00;
+	font-family: 'shentox';
+	font-weight: bold;
+
+}
+td.logout:hover {
+	background-color: #E47000;
+
+}
+td.removeaccount {
+	border : 0px;
+	width: 150px;
+	height: 25px;
+	padding-left:0px;
+	color:white;
+	font-size: 15px;
+	text-align:center;
+	background-color: rgba(244,67,54,1);
+	font-family: 'shentox';
+	font-weight: bold;
+
+}
+td.removeaccount:hover {
+	background-color: rgba(214,48,36,1);
+
+}
+span.prizestyle{
+
+	font-weight:bold;
+	font-size:20px;
+	
+
+}
+
+
+img.mypageloadbutton{
+
+	height: 22px;
+	margin-left: 20px;
+	vertical-align: text-bottom;
+}
